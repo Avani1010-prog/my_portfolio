@@ -77,7 +77,8 @@ export default function Home() {
       canvas.height = window.innerHeight;
 
       const binary = '01';
-      const fontSize = 20;
+      // Responsive font size based on screen width
+      const fontSize = window.innerWidth < 768 ? 14 : 20;
       const columns = canvas.width / fontSize;
 
       const drops: number[] = [];
@@ -168,12 +169,13 @@ export default function Home() {
     // Scroll Handler for Timeline, Parallax, and Vector BG
     const handleScroll = () => {
       const scrolled = window.scrollY;
+      const isMobile = window.innerWidth < 768;
 
-      // Hero Parallax
+      // Hero Parallax (disabled on mobile for better performance)
       const hero = document.querySelector('.hero-content') as HTMLElement;
       const scrollIndicator = document.querySelector('.scroll-indicator') as HTMLElement;
 
-      if (hero) {
+      if (hero && !isMobile) {
         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         hero.style.opacity = String(1 - (scrolled / 600));
       }
