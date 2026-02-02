@@ -675,6 +675,17 @@ body {
   .project-link {
     width: 100%;
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .socials-container {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
 }
 
 /* =========================================
@@ -745,7 +756,8 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   /* Look like an array */
   border-left: 4px solid rgba(255, 149, 0, 0.3);
