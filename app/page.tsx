@@ -438,7 +438,7 @@ export default function Home() {
               <span className="array-index">index: [1]</span>
               <div className="project-header">
                 <h3 className="project-title">Narad</h3>
-                <span className="project-badge">AI Powered Heuristics</span>
+                <span className="project-badge">AI Insights</span>
               </div>
               <p className="project-subtitle">Real-Time News Verification System with AI</p>
               <p className="project-description">
