@@ -789,6 +789,7 @@ body {
     font-size: 0.65rem;
     padding: 3px 8px;
     white-space: normal;
+    margin-left: -5px;
   }
 
   .array-index {
