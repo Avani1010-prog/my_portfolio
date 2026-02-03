@@ -413,6 +413,7 @@ body {
   .section-title {
     font-size: clamp(0.9rem, 5vw, 1.5rem);
     margin-bottom: 2.5rem;
+    margin-top: 3rem;
     line-height: 2;
   }
 }
@@ -676,6 +677,10 @@ body {
     padding: 4rem 0;
   }
 
+  .projects-section .section-title {
+    margin-top: 4.5rem;
+  }
+
   .skills-section::before {
     content: 'user@skills:~$ ./list.sh';
     width: 96%;
@@ -783,6 +788,7 @@ body {
     align-self: flex-start;
     font-size: 0.65rem;
     padding: 3px 8px;
+    white-space: normal;
   }
 
   .array-index {
