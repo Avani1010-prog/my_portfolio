@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Muted Color Palette - DSA Theme */
-    --color-bg-primary: #0d1117;
-    --color-bg-secondary: #161b22;
-    --color-bg-tertiary: #1f2937;
-    --color-text-primary: #e6edf3;
-    --color-text-secondary: #8b949e;
-    --color-text-muted: #6e7681;
+    /* Yellow & Black Theme */
+    --color-bg-primary: #0a0a00;
+    --color-bg-secondary: #111100;
+    --color-bg-tertiary: #1a1a00;
+    --color-text-primary: #f5f0d0;
+    --color-text-secondary: #b8a830;
+    --color-text-muted: #7a6e20;
 
-    /* Simple, Muted Accents */
-    --color-accent-soft-blue: #58a6ff;
-    --color-accent-teal: #56d4dd;
-    --color-accent-slate: #7d8590;
-    --color-accent-success: #3fb950;
-    --color-accent-warning: #d29922;
+    /* Yellow Accents */
+    --color-accent-soft-blue: #FFD700;
+    --color-accent-teal: #F5C400;
+    --color-accent-slate: #8a7a20;
+    --color-accent-success: #c8b400;
+    --color-accent-warning: #FFD700;
 
     /* Timeline/Path Colors */
-    --color-path: #30363d;
-    --color-node-inactive: #484f58;
-    --color-node-active: #58a6ff;
-    --color-glow: rgba(88, 166, 255, 0.4);
+    --color-path: #2a2500;
+    --color-node-inactive: #4a4000;
+    --color-node-active: #FFD700;
+    --color-glow: rgba(255, 215, 0, 0.45);
 
-    /* Simple Gradients */
-    --gradient-primary: linear-gradient(135deg, #58a6ff 0%, #56d4dd 100%);
-    --gradient-muted: linear-gradient(135deg, #30363d 0%, #484f58 100%);
-    --gradient-hero: linear-gradient(135deg, #58a6ff 0%, #56d4dd 50%, #3fb950 100%);
+    /* Yellow Gradients */
+    --gradient-primary: linear-gradient(135deg, #FFD700 0%, #F5C400 100%);
+    --gradient-muted: linear-gradient(135deg, #2a2500 0%, #4a4000 100%);
+    --gradient-hero: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #F5C400 100%);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -41,10 +41,10 @@
     --font-display: 'Space Grotesk', sans-serif;
 
     /* Effects */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.8);
     --shadow-glow: 0 0 30px var(--color-glow);
 
     /* Border Radius */
@@ -81,8 +81,8 @@ body {
     align-items: center;
     position: relative;
     padding: var(--spacing-lg);
-    background: radial-gradient(ellipse at top, rgba(88, 166, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at bottom, rgba(86, 212, 221, 0.06) 0%, transparent 50%);
+    background: radial-gradient(ellipse at top, rgba(255, 215, 0, 0.10) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom, rgba(245, 196, 0, 0.07) 0%, transparent 50%);
 }
 
 .hero-section::before {
@@ -93,8 +93,8 @@ body {
     right: 0;
     bottom: 0;
     background:
-        repeating-linear-gradient(90deg, rgba(88, 166, 255, 0.02) 0px, transparent 1px, transparent 100px, rgba(88, 166, 255, 0.02) 101px),
-        repeating-linear-gradient(0deg, rgba(88, 166, 255, 0.02) 0px, transparent 1px, transparent 100px, rgba(88, 166, 255, 0.02) 101px);
+        repeating-linear-gradient(90deg, rgba(255, 215, 0, 0.03) 0px, transparent 1px, transparent 100px, rgba(255, 215, 0, 0.03) 101px),
+        repeating-linear-gradient(0deg, rgba(255, 215, 0, 0.03) 0px, transparent 1px, transparent 100px, rgba(255, 215, 0, 0.03) 101px);
     pointer-events: none;
     animation: gridPulse 4s ease-in-out infinite;
 }
@@ -180,25 +180,25 @@ body {
 
 .btn-primary {
     background: var(--gradient-primary);
-    color: white;
-    box-shadow: var(--shadow-md), 0 0 20px rgba(88, 166, 255, 0.2);
+    color: #0a0a00;
+    box-shadow: var(--shadow-md), 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg), 0 0 30px rgba(88, 166, 255, 0.4);
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(255, 215, 0, 0.5);
 }
 
 .btn-secondary {
-    background: rgba(88, 166, 255, 0.05);
+    background: rgba(255, 215, 0, 0.05);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(88, 166, 255, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.25);
     color: var(--color-accent-soft-blue);
 }
 
 .btn-secondary:hover {
-    background: rgba(88, 166, 255, 0.1);
-    border-color: rgba(88, 166, 255, 0.4);
+    background: rgba(255, 215, 0, 0.12);
+    border-color: rgba(255, 215, 0, 0.5);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -401,7 +401,7 @@ section {
 
 .skill-card.active::before {
     background: var(--color-node-active);
-    box-shadow: 0 0 25px var(--color-glow), 0 0 35px rgba(88, 166, 255, 0.3);
+    box-shadow: 0 0 25px var(--color-glow), 0 0 35px rgba(255, 215, 0, 0.35);
     border-color: var(--color-node-active);
     animation: nodeGlow 2s ease-in-out infinite;
 }
@@ -413,26 +413,26 @@ section {
 
 .skill-card.active {
     border-color: var(--color-accent-soft-blue);
-    background: rgba(88, 166, 255, 0.05);
+    background: rgba(255, 215, 0, 0.06);
 }
 
 @keyframes nodeGlow {
 
     0%,
     100% {
-        box-shadow: 0 0 20px var(--color-glow), 0 0 30px rgba(88, 166, 255, 0.2);
+        box-shadow: 0 0 20px var(--color-glow), 0 0 30px rgba(255, 215, 0, 0.25);
     }
 
     50% {
-        box-shadow: 0 0 35px var(--color-glow), 0 0 50px rgba(88, 166, 255, 0.4);
+        box-shadow: 0 0 35px var(--color-glow), 0 0 50px rgba(255, 215, 0, 0.45);
     }
 }
 
 .skill-card:hover {
     transform: translateY(-5px) scale(1.02);
-    border-color: rgba(88, 166, 255, 0.4);
-    box-shadow: var(--shadow-lg), 0 0 25px rgba(88, 166, 255, 0.15);
-    background: rgba(88, 166, 255, 0.08);
+    border-color: rgba(255, 215, 0, 0.45);
+    box-shadow: var(--shadow-lg), 0 0 25px rgba(255, 215, 0, 0.18);
+    background: rgba(255, 215, 0, 0.07);
 }
 
 .skill-icon {
@@ -470,8 +470,8 @@ section {
 .tag {
     display: inline-block;
     padding: 0.4rem 0.85rem;
-    background: rgba(88, 166, 255, 0.08);
-    border: 1px solid rgba(88, 166, 255, 0.2);
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.25);
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-weight: 500;
@@ -481,8 +481,8 @@ section {
 }
 
 .tag:hover {
-    background: rgba(88, 166, 255, 0.15);
-    border-color: rgba(88, 166, 255, 0.4);
+    background: rgba(255, 215, 0, 0.16);
+    border-color: rgba(255, 215, 0, 0.5);
     transform: translateY(-2px);
 }
 
@@ -534,9 +534,9 @@ section {
 
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(88, 166, 255, 0.4);
-    box-shadow: var(--shadow-xl), 0 0 30px rgba(88, 166, 255, 0.2);
-    background: rgba(88, 166, 255, 0.05);
+    border-color: rgba(255, 215, 0, 0.45);
+    box-shadow: var(--shadow-xl), 0 0 30px rgba(255, 215, 0, 0.22);
+    background: rgba(255, 215, 0, 0.05);
 }
 
 .project-header {
@@ -591,8 +591,8 @@ section {
 
 .tech-tag {
     padding: 0.45rem 0.9rem;
-    background: rgba(88, 166, 255, 0.08);
-    border: 1px solid rgba(88, 166, 255, 0.2);
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.25);
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
     font-weight: 500;
@@ -620,13 +620,13 @@ section {
 
 .project-link.primary {
     background: var(--gradient-primary);
-    color: white;
-    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+    color: #0a0a00;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.25);
 }
 
 .project-link.primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(88, 166, 255, 0.35);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.45);
 }
 
 .project-link.secondary {
@@ -681,8 +681,8 @@ section {
 .social-link:hover {
     transform: translateY(-8px) scale(1.05);
     border-color: var(--color-accent-soft-blue);
-    background: rgba(88, 166, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.2);
+    background: rgba(255, 215, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.25);
 }
 
 .social-link svg {
