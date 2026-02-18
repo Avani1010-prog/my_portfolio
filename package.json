@@ -1,0 +1,17 @@
+{
+  "name": "avani-portfolio",
+  "version": "1.0.0",
+  "description": "Avani Pandey - Software Developer & AI Engineer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000 -o",
+    "start": "npx -y http-server -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "ai-engineer"
+  ],
+  "author": "Avani Pandey",
+  "license": "MIT"
+}
